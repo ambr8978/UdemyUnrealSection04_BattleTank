@@ -1,2 +1,2 @@
-# UdemyUnrealSection04_BattleTank
-Open world head to head tank fighting game in UE4
+# Udemy Section 04 - Battle Tank
+Open world head to head tank fighting game developed in UE4.
