@@ -3,14 +3,10 @@
 #include "TankPlayerController.h"
 #include "Engine.h"
 
-ATank* ATankPlayerController::GetControlledTank() const
-{
-	return Cast<ATank>(GetPawn());
-}
-
 void ATankPlayerController::BeginPlay()
 {
 	Super::BeginPlay();
+	UE_LOG(LogTemp, Warning, TEXT("TankPlayerController BeginPlay()"));
 
 	auto ControlledTank = GetControlledTank();
 	if (ControlledTank)
@@ -21,4 +17,20 @@ void ATankPlayerController::BeginPlay()
 	{
 		UE_LOG(LogTemp, Warning, TEXT("TankPlayerController is not possesing a tank"));
 	}
+}
+
+void ATankPlayerController::Tick(float DeltaTime) 
+{
+	Super::Tick(DeltaTime);
+	AimTowardsCrosshair();
+}
+
+ATank* ATankPlayerController::GetControlledTank() const
+{
+	return Cast<ATank>(GetPawn());
+}
+
+void ATankPlayerController::AimTowardsCrosshair() 
+{
+
 }
