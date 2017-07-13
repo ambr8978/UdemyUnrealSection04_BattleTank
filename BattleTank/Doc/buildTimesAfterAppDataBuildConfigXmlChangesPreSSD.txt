@@ -1,0 +1,23 @@
+After changes in C:\Users\antho\AppData\Roaming\Unreal Engine\UnrealBuildTool\BuildConfiguration.xml:
+<?xml version="1.0" encoding="utf-8" ?><Configuration xmlns="https://www.unrealengine.com/BuildConfiguration">
+	<BuildConfiguration>
+		<ProcessorCountMultiplier>6</ProcessorCountMultiplier>
+		<bUseUnityBuild>false</bUseUnityBuild>
+		<MinFilesUsingPrecompiledHeader>1</MinFilesUsingPrecompiledHeader>
+	</BuildConfiguration>
+</Configuration>
+
+
+CompilerResultsLog: New page: Compilation - Jul 11, 2017, 12:39:34 PM
+CompilerResultsLog: Info Creating makefile for hot reloading BattleTank (BuildConfiguration.xml is newer)
+CompilerResultsLog: Info Compiling game modules for hot reload
+CompilerResultsLog: Info Performing 1 actions (24 in parallel)
+CompilerResultsLog: Info [1/1] Link UE4Editor-BattleTank-4392.dll
+CompilerResultsLog: Info    Creating library D:\antho\OneDrive\Dev\Unreal\Section_04\UdemyUnrealSection04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-4392.suppressed.lib and object D:\antho\OneDrive\Dev\Unreal\Section_04\UdemyUnrealSection04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4
+Editor-BattleTank-4392.suppressed.exp
+CompilerResultsLog: Info Total build time: 42.39 seconds (Local executor: 2.58 seconds)
+LogMainFrame: MainFrame: Module compiling took 43.929 seconds
+LogContentBrowser: Native class hierarchy updated for 'BattleTank' in 0.0819 seconds. Added 4 classes and 3 folders.
+Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+LogContentBrowser: Native class hierarchy populated in 0.0217 seconds. Added 2335 classes and 498 folders.
+Display: HotReload took 51.9s.

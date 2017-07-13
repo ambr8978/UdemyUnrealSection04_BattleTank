@@ -1,0 +1,148 @@
+CompilerResultsLog: Info ERROR: UBT ERROR: Failed to produce item: D:\antho\OneDrive\Dev\Unreal\Section_04\UdemyUnrealSection04_BattleTank\BattleTank\Binaries\Win64\UE4Editor-BattleTank-9157.dll
+CompilerResultsLog: Info Total build time: 145.47 seconds (Local executor: 0.00 seconds)
+LogMainFrame: MainFrame: Module compiling took 146.151 seconds
+Warning: HotReload failed, recompile failed
+Candidate modules for hot reload:
+  BattleTank
+Launching UnrealBuildTool... [D:/Programs/Epic Games/UE_4.16/Engine/Binaries/DotNET/UnrealBuildTool.exe BattleTank -ModuleWithSuffix BattleTank 1695 Win64 Development -editorrecompile -canskiplink "D:/antho/OneDrive/Dev/Unreal/Section_04/UdemyUnrealSection04_BattleTank/BattleTank/BattleTank.uproject" ]
+Warning: Starting HotReload took  0.2s.
+CompilerResultsLog: New page: Compilation - Jul 10, 2017, 2:22:15 PM
+CompilerResultsLog:Error: Error D:\Programs\Epic Games\UE_4.16\Engine\Saved\UnrealBuildTool\BuildConfiguration.xml(3) : The element 'Configuration' in namespace 'https://www.unrealengine.com/BuildConfiguration' has invalid child element 'ProcessorCountMultiplier' in namespace 'https://www.unrealengine.com/BuildConfiguration'. List of possible elements expect
+ed: 'SNDBS, IOSToolChain, UEBuildConfiguration, HTML5Platform, BuildConfiguration, WindowsPlatform, VCProjectFileGenerator, RemoteToolChain' in namespace 'https://www.unrealengine.com/BuildConfiguration'.
+LogMainFrame: MainFrame: Module compiling took 1.464 seconds
+Warning: HotReload failed, recompile failed
+Candidate modules for hot reload:
+  BattleTank
+Launching UnrealBuildTool... [D:/Programs/Epic Games/UE_4.16/Engine/Binaries/DotNET/UnrealBuildTool.exe BattleTank -ModuleWithSuffix BattleTank 2162 Win64 Development -editorrecompile -canskiplink "D:/antho/OneDrive/Dev/Unreal/Section_04/UdemyUnrealSection04_BattleTank/BattleTank/BattleTank.uproject" ]
+Warning: Starting HotReload took  0.0s.
+CompilerResultsLog: New page: Compilation - Jul 10, 2017, 2:27:57 PM
+CompilerResultsLog: Info Creating makefile for hot reloading BattleTank (BuildConfiguration.xml is newer)
+CompilerResultsLog: Info Compiling game modules for hot reload
+CompilerResultsLog: Info Performing 3 actions (4 in parallel)
+CompilerResultsLog: Info TankAIController.cpp
+CompilerResultsLog: Info [2/3] Link UE4Editor-BattleTank-2162.dll
+CompilerResultsLog: Info [3/3] Link UE4Editor-BattleTank-2162.lib
+CompilerResultsLog: Info    Creating library D:\antho\OneDrive\Dev\Unreal\Section_04\UdemyUnrealSection04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-2162.lib and object D:\antho\OneDrive\Dev\Unreal\Section_04\UdemyUnrealSection04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Batt
+leTank-2162.exp
+CompilerResultsLog: Info    Creating library D:\antho\OneDrive\Dev\Unreal\Section_04\UdemyUnrealSection04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-2162.suppressed.lib and object D:\antho\OneDrive\Dev\Unreal\Section_04\UdemyUnrealSection04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4
+Editor-BattleTank-2162.suppressed.exp
+CompilerResultsLog: Info Total build time: 177.49 seconds (Local executor: 146.38 seconds)
+LogMainFrame: MainFrame: Module compiling took 178.013 seconds
+LogContentBrowser: Native class hierarchy updated for 'BattleTank' in 0.0063 seconds. Added 4 classes and 3 folders.
+Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+LogContentBrowser: Native class hierarchy populated in 0.0324 seconds. Added 2335 classes and 498 folders.
+Display: HotReload took 180.4s.
+LogTemp: Repeting last play command: Selected Viewport
+LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.Battl
+eGround'
+LogPlayLevel: PlayLevel: No blueprints needed recompiling
+PIE: New page: PIE session: BattleGround (Jul 10, 2017, 2:28:05 PM)
+LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BattleGround
+LogPlayLevel: PIE: StaticDuplicateObject took: (0.342898s)
+LogAIModule: Creating AISystem for world BattleGround
+LogPlayLevel: PIE: World Init took: (0.069635s)
+LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BattleGround.BattleGround to /Game/Levels/UEDPIE_0_BattleGround.BattleGround (0.458759s)
+LogInit: XAudio2 using 'Speakers (Sound Blaster Recon3Di)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+LogInit: FAudioDevice initialized.
+LogLoad: Game class is 'BattleTankGameMode_BP_C'
+LogWorld: Bringing World /Game/Levels/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 60) at 2017.07.10-20.28.06
+LogWorld: Bringing up level for play took: 0.204094
+LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0040 seconds. Added 11 classes and 0 folders.
+LogTemp:Warning: TankAIController is possesing tank Tank_BP_394
+LogTemp:Warning: ATankAIController BeginPlay
+LogTemp:Warning: TankAIController is possesing tank Tank_BP2_782
+LogTemp:Warning: ATankAIController BeginPlay
+LogTemp:Warning: TankPlayerController is possesing tank Tank_BP_C_0
+LogTemp:Warning: ATankPlayerController BeginPlay
+PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_BattleGround 1.878
+LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.Battle
+Ground'
+LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleG
+round'
+LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGr
+ound'
+LogTemp: Repeting last play command: Selected Viewport
+LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.Battl
+eGround'
+LogPlayLevel: PlayLevel: No blueprints needed recompiling
+PIE: New page: PIE session: BattleGround (Jul 10, 2017, 2:28:18 PM)
+LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_BattleGround
+LogPlayLevel: PIE: StaticDuplicateObject took: (0.091851s)
+LogAIModule: Creating AISystem for world BattleGround
+LogPlayLevel: PIE: World Init took: (0.001146s)
+LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/BattleGround.BattleGround to /Game/Levels/UEDPIE_0_BattleGround.BattleGround (0.093739s)
+LogInit: XAudio2 using 'Speakers (Sound Blaster Recon3Di)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+LogInit: FAudioDevice initialized.
+LogLoad: Game class is 'BattleTankGameMode_BP_C'
+LogWorld: Bringing World /Game/Levels/UEDPIE_0_BattleGround.BattleGround up for play (max tick rate 60) at 2017.07.10-20.28.18
+LogWorld: Bringing up level for play took: 0.004834
+LogTemp:Warning: TankAIController is possesing tank Tank_BP_394
+LogTemp:Warning: ATankAIController BeginPlay
+LogTemp:Warning: TankAIController is possesing tank Tank_BP2_782
+LogTemp:Warning: ATankAIController BeginPlay
+LogTemp:Warning: TankPlayerController is possesing tank Tank_BP_C_0
+LogTemp:Warning: ATankPlayerController BeginPlay
+PIE: Info Play in editor start time for /Game/Levels/UEDPIE_0_BattleGround -0.659
+LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.Battle
+Ground'
+LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleG
+round'
+LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Levels/BattleGround.BattleGround:PersistentLevel' has LevelScriptBlueprint '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGround' with GeneratedClass '/Game/Levels/BattleGround.BattleGround_C' with ClassGeneratedBy '/Game/Levels/BattleGround.BattleGround:PersistentLevel.BattleGr
+ound'
+LogSavePackage: Save=1912.15ms
+LogSavePackage: Moving '../../../../../../antho/OneDrive/Dev/Unreal/Section_04/UdemyUnrealSection04_BattleTank/BattleTank/Saved/BattleGroundAD0FA17D4F933DA5832AACBFD9E6D335.tmp' to '../../../../../../antho/OneDrive/Dev/Unreal/Section_04/UdemyUnrealSection04_BattleTank/BattleTank/Content/Levels/BattleGround.umap'
+LogSavePackage:Display: Finished SavePackage ../../../../../../antho/OneDrive/Dev/Unreal/Section_04/UdemyUnrealSection04_BattleTank/BattleTank/Content/Levels/BattleGround.umap
+LogRenderer: Reallocating scene render targets to support 1428x600 NumSamples 1 (Frame:15202).
+LogRenderer: Reallocating scene render targets to support 1428x640 NumSamples 1 (Frame:15204).
+Candidate modules for hot reload:
+  BattleTank
+Launching UnrealBuildTool... [D:/Programs/Epic Games/UE_4.16/Engine/Binaries/DotNET/UnrealBuildTool.exe BattleTank -ModuleWithSuffix BattleTank 8264 Win64 Development -editorrecompile -canskiplink "D:/antho/OneDrive/Dev/Unreal/Section_04/UdemyUnrealSection04_BattleTank/BattleTank/BattleTank.uproject" ]
+Warning: Starting HotReload took  1.6s.
+CompilerResultsLog: New page: Compilation - Jul 11, 2017, 12:00:14 PM
+CompilerResultsLog: Info Compiling game modules for hot reload
+CompilerResultsLog: Info Parsing headers for BattleTankEditor
+CompilerResultsLog: Info   Running UnrealHeaderTool "D:\antho\OneDrive\Dev\Unreal\Section_04\UdemyUnrealSection04_BattleTank\BattleTank\BattleTank.uproject" "D:\antho\OneDrive\Dev\Unreal\Section_04\UdemyUnrealSection04_BattleTank\BattleTank\Intermediate\Build\Win64\BattleTankEditor\Development\BattleTankEditor.uhtmanifest" -LogCmds="loginit warning, logexit 
+warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+CompilerResultsLog: Info Reflection code generated for BattleTankEditor in 23.7614527 seconds
+CompilerResultsLog: Info Performing 4 actions (4 in parallel)
+CompilerResultsLog: Info BattleTank.generated.cpp
+CompilerResultsLog: Info TankPlayerController.cpp
+LogMainFrame: MainFrame: Module compiling took 109.986 seconds
+Warning: HotReload failed, recompile failed
+LogVSAccessor:Warning: Couldn't goto line number '0' in 'D:/antho/OneDrive/Dev/Unreal/Section_04/UdemyUnrealSection04_BattleTank/BattleTank/Source/BattleTank/Public/TankPlayerController.h'
+LogVSAccessor:Warning: Couldn't goto line number '0' in 'D:/antho/OneDrive/Dev/Unreal/Section_04/UdemyUnrealSection04_BattleTank/BattleTank/Source/BattleTank/Private/TankPlayerController.cpp'
+Candidate modules for hot reload:
+  BattleTank
+Launching UnrealBuildTool... [D:/Programs/Epic Games/UE_4.16/Engine/Binaries/DotNET/UnrealBuildTool.exe BattleTank -ModuleWithSuffix BattleTank 7817 Win64 Development -editorrecompile -canskiplink "D:/antho/OneDrive/Dev/Unreal/Section_04/UdemyUnrealSection04_BattleTank/BattleTank/BattleTank.uproject" ]
+Warning: Starting HotReload took  0.2s.
+CompilerResultsLog: New page: Compilation - Jul 11, 2017, 12:15:05 PM
+CompilerResultsLog: Info Compiling game modules for hot reload
+CompilerResultsLog: Info Performing full C++ include scan (no include cache file)
+CompilerResultsLog: Info Performing 3 actions (4 in parallel)
+CompilerResultsLog: Info TankPlayerController.cpp
+CompilerResultsLog:Error: Error d:\antho\onedrive\dev\unreal\section_04\udemyunrealsection04_battletank\battletank\source\battletank\private\tankplayercontroller.cpp(14)  : error C4716: 'ATankPlayerController::GetPlayerTank': must return a value
+CompilerResultsLog:Error: Error d:\antho\onedrive\dev\unreal\section_04\udemyunrealsection04_battletank\battletank\source\battletank\private\tankplayercontroller.cpp(31)  : error C4700: uninitialized local variable 'PlayerTank' used
+CompilerResultsLog: Info ERROR: UBT ERROR: Failed to produce item: D:\antho\OneDrive\Dev\Unreal\Section_04\UdemyUnrealSection04_BattleTank\BattleTank\Binaries\Win64\UE4Editor-BattleTank-7817.dll
+CompilerResultsLog: Info Total build time: 671.82 seconds (Local executor: 0.00 seconds)
+LogMainFrame: MainFrame: Module compiling took 673.912 seconds
+Warning: HotReload failed, recompile failed
+Candidate modules for hot reload:
+  BattleTank
+Launching UnrealBuildTool... [D:/Programs/Epic Games/UE_4.16/Engine/Binaries/DotNET/UnrealBuildTool.exe BattleTank -ModuleWithSuffix BattleTank 1515 Win64 Development -editorrecompile -canskiplink "D:/antho/OneDrive/Dev/Unreal/Section_04/UdemyUnrealSection04_BattleTank/BattleTank/BattleTank.uproject" ]
+Warning: Starting HotReload took  0.1s.
+CompilerResultsLog: New page: Compilation - Jul 11, 2017, 12:23:45 PM
+CompilerResultsLog: Info Compiling game modules for hot reload
+CompilerResultsLog: Info Performing 3 actions (4 in parallel)
+CompilerResultsLog: Info TankPlayerController.cpp
+CompilerResultsLog: Info [2/3] Link UE4Editor-BattleTank-1515.dll
+CompilerResultsLog: Info [3/3] Link UE4Editor-BattleTank-1515.lib
+CompilerResultsLog: Info    Creating library D:\antho\OneDrive\Dev\Unreal\Section_04\UdemyUnrealSection04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-1515.lib and object D:\antho\OneDrive\Dev\Unreal\Section_04\UdemyUnrealSection04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Batt
+leTank-1515.exp
+CompilerResultsLog: Info    Creating library D:\antho\OneDrive\Dev\Unreal\Section_04\UdemyUnrealSection04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BattleTank-1515.suppressed.lib and object D:\antho\OneDrive\Dev\Unreal\Section_04\UdemyUnrealSection04_BattleTank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\UE4
+Editor-BattleTank-1515.suppressed.exp
+CompilerResultsLog: Info Total build time: 486.38 seconds (Local executor: 480.67 seconds)
+LogMainFrame: MainFrame: Module compiling took 488.951 seconds
+LogContentBrowser: Native class hierarchy updated for 'BattleTank' in 0.0424 seconds. Added 4 classes and 3 folders.
+Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+LogContentBrowser: Native class hierarchy populated in 0.0313 seconds. Added 2335 classes and 498 folders.
+Display: HotReload took 501.3s.
