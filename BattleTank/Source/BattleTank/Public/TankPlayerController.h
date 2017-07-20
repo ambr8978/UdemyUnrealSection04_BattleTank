@@ -3,9 +3,10 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Tank.h"
 #include "GameFramework/PlayerController.h"
 #include "TankPlayerController.generated.h"
+
+class ATank;
 
 #define CROSSHAIR_DEFAULT_X .5
 #define CROSSHAIR_DEFAULT_Y .33333
