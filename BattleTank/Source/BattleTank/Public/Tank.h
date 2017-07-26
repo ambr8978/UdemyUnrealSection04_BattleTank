@@ -47,5 +47,7 @@ private:
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-	
+
+	float ReloadTimeInSeconds = 3.0f;
+	double LastFireTime = 0;	
 };
