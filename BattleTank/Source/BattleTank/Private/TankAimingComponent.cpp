@@ -76,10 +76,6 @@ void UTankAimingComponent::AimAt(FVector HitLocation, float LaunchSpeed)
 		auto TankName = GetOwner()->GetName();
 		MoveBarrelTowards(AimDirection);
 	}
-	else
-	{
-		UE_LOG(LogTemp, Warning, TEXT("No aim direction established"))
-	}
  }
 
 void UTankAimingComponent::MoveBarrelTowards(FVector AimDirection)
