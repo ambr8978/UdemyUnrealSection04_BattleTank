@@ -11,9 +11,14 @@ void UTankMovementComponent::Initialize(UTankTrack* LeftTrackToSet, UTankTrack* 
 
 void UTankMovementComponent::IntentMoveForward(float Throw)
 {
-	UE_LOG(LogTemp, Warning, TEXT("IntentMoveForward - throw:%f"), Throw);
 	LeftTrack->SetThrottle(Throw);
 	RightTrack->SetThrottle(Throw);
 
 	//TODO prevent double input from stick and throttles
+}
+
+void UTankMovementComponent::IntentTurnRight(float Throw)
+{
+	LeftTrack->SetThrottle(Throw);
+	RightTrack->SetThrottle(-Throw);
 }
