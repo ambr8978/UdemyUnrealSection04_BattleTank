@@ -26,6 +26,12 @@ void UTankMovementComponent::IntentTurnRight(float Throw)
 void UTankMovementComponent::RequestDirectMove(const FVector& MoveVelocity, bool bForceMaxSpeed)
 {
 	// Explicitly overriding UNavComponent's implementation, so no Super call
-	auto TankName = GetOwner()->GetName();
-	auto MoveVelocityString = MoveVelocity.ToString();
+	auto TankDirectionNormal = GetOwner()->GetActorForwardVector().GetSafeNormal();
+	auto AiMoveIntentionNormal = MoveVelocity.GetSafeNormal();
+
+	auto ForwardThrowNormal = FVector::DotProduct(TankDirectionNormal, AiMoveIntentionNormal);
+	IntentMoveForward(ForwardThrowNormal);
+
+	auto RightTurnNormal = FVector::CrossProduct(TankDirectionNormal, AiMoveIntentionNormal).Z;
+	IntentTurnRight(RightTurnNormal);
 }
