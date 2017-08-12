@@ -6,6 +6,8 @@
 #include "Components/ActorComponent.h"
 #include "TankAimingComponent.generated.h"
 
+class AProjectile;
+
 UENUM()
 enum class EFiringState : uint8
 {
@@ -17,24 +19,35 @@ enum class EFiringState : uint8
 class UTankBarrel;
 class UTankTurret;
 
-UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
+UCLASS(ClassGroup = (Custom), meta = (BlueprintSpawnableComponent))
 class BATTLETANK_API UTankAimingComponent : public UActorComponent
 {
 	GENERATED_BODY()
 
-public:	
+public:
 	// Sets default values for this component's properties
 	UTankAimingComponent();
 
 	void SetBarrelReference(UTankBarrel* BarrelToSet);
 	void SetTurretReference(UTankTurret* TurretToSet);
 
-	void AimAt(FVector HitLocation, float LaunchSpeed);
+	void Fire();
+	void AimAt(FVector HitLocation);
 	void MoveBarrelTowards(FVector AimDirection);
 protected:
-	UPROPERTY(BlueprintReadOnly, Category = State)
-	EFiringState FiringState = EFiringState::RELOADING;
+	UPROPERTY(EditDefaultsOnly, Category = Firing)
+		float LaunchSpeed = 4000; //1000 m/s
 
+	UPROPERTY(EditDefaultsOnly, Category = Firing)
+		float ReloadTimeInSeconds = 3.0f;
+
+	UPROPERTY(BlueprintReadOnly, Category = State)
+		EFiringState FiringState = EFiringState::RELOADING;
+
+	UPROPERTY(EditDefaultsOnly, Category = Setup)
+		TSubclassOf<AProjectile> ProjectileBP = nullptr;
+
+	double LastFireTime = 0;
 	UTankTurret* Turret = nullptr;
 	UTankBarrel* Barrel = nullptr;
 
