@@ -58,5 +58,6 @@ private:
 	UTankBarrel* Barrel = nullptr;
 
 	virtual void BeginPlay() override;
+	void TickComponent(float DeltaTime, enum ELevelTick TickType, FActorComponentTickFunction *ThisTickFunction) override;
 	void MoveBarrelTowards(FVector AimDirection);
 };
