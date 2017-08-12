@@ -8,9 +8,6 @@
 
 class UTankTrack;
 
-/*
-Responible for driving the tank tracks
-*/
 UCLASS(ClassGroup = (Custom), meta = (BlueprintSpawnableComponent))
 class BATTLETANK_API UTankMovementComponent : public UNavMovementComponent
 {

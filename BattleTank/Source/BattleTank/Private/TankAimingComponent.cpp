@@ -8,22 +8,18 @@
 
 // Sets default values for this component's properties
 UTankAimingComponent::UTankAimingComponent()
-{
-	// Set this component to be initialized when the game starts, and to be ticked every frame.  You can turn these features
-	// off to improve performance if you don't need them.
+{	
 	PrimaryComponentTick.bCanEverTick = false;
-
-	// ...
 }
 
-
-// Called when the game starts
 void UTankAimingComponent::BeginPlay()
 {
 	Super::BeginPlay();
+}
 
-	// ...
-	
+void UTankAimingComponent::Initialize(UTankBarrel* BarrelToSet, UTankTurret* TurretToSet) {
+	Barrel = BarrelToSet;
+	Turret = TurretToSet;
 }
 
 void UTankAimingComponent::SetBarrelReference(UTankBarrel* BarrelToSet)
@@ -38,6 +34,9 @@ void UTankAimingComponent::SetTurretReference(UTankTurret* TurretToSet)
 
 void UTankAimingComponent::Fire()
 {
+	if (!ensure(Barrel)) { return; }
+	if (!ensure(ProjectileBP)) { return; }
+
 	bool bIsReloaded = (FPlatformTime::Seconds() - LastFireTime) > ReloadTimeInSeconds;
 
 	if (Barrel && bIsReloaded)

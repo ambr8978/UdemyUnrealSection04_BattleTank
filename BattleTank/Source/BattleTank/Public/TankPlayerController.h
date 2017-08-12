@@ -7,6 +7,7 @@
 #include "TankPlayerController.generated.h"
 
 class ATank;
+class UTankAimingComponent;
 
 #define CROSSHAIR_DEFAULT_X .5
 #define CROSSHAIR_DEFAULT_Y .33333
@@ -19,6 +20,10 @@ class BATTLETANK_API ATankPlayerController : public APlayerController
 public:
 	virtual void BeginPlay() override;
 	virtual void Tick(float DeltaTime) override;
+
+protected:
+	UFUNCTION(BlueprintImplementableEvent, Category = "Setup")
+	void FoundAimingComponent(UTankAimingComponent* AimingComponentReference);
 	
 private:
 	UPROPERTY(EditDefaultsOnly)
