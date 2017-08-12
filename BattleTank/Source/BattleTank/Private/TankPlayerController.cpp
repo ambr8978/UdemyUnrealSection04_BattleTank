@@ -22,7 +22,7 @@ void ATankPlayerController::Tick(float DeltaTime)
 void ATankPlayerController::AimTowardsCrosshair()
 {
 	auto Pawn = GetPawn();
-	if (!ensure(Pawn)) { return; }
+	if (!Pawn) { return; }
 	auto AimingComponent = Pawn->FindComponentByClass<UTankAimingComponent>();
 	if (!ensure(AimingComponent)) { return; }
 
