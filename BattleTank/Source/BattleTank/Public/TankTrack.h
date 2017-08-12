@@ -15,16 +15,22 @@ public:
 		void SetThrottle(float Throttle);
 
 private:
-	UTankTrack();
-
 	//Max force per track in Newtons
 	//Assume 1g acceleration and 40 tonne tank
 	UPROPERTY(EditDefaultsOnly)
 		float TrackMaxDrivingForce = 400000;	
 
+	/*
+	This function will get called every frame that the TankTrack is hit 
+	(which is likely every frame since the Tank should usually be on the ground)
+	*/
 	UFUNCTION()
 	void OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComponent, FVector NormalImpulse, const FHitResult& Hit);
 
+	float CurrentThrottle = 0.0f;
+
+	UTankTrack();
 	void BeginPlay() override;
-	void TickComponent(float DeltaTime, enum ELevelTick TickType, FActorComponentTickFunction *ThisTickFunction);
+	void ApplySidewaysForce();
+	void DriveTrack();
 };
