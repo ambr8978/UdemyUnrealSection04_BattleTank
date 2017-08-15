@@ -37,6 +37,7 @@ public:
 	UFUNCTION(BlueprintCallable, Category = Firing)
 	void Fire();
 	void AimAt(FVector HitLocation);
+	EFiringState GetFiringState() const;
 
 protected:
 	UPROPERTY(BlueprintReadOnly, Category = State)
