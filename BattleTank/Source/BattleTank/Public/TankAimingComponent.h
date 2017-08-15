@@ -13,7 +13,8 @@ enum class EFiringState : uint8
 {
 	AIMING,
 	LOCKED,
-	RELOADING
+	RELOADING,
+	OUT_OF_AMMO
 };
 
 class UTankBarrel;
@@ -30,6 +31,9 @@ public:
 
 	void SetBarrelReference(UTankBarrel* BarrelToSet);
 	void SetTurretReference(UTankTurret* TurretToSet);
+
+	UFUNCTION(BlueprintCallable, Category = Firing)
+	int GetRoundsLeft() const;
 
 	UFUNCTION(BlueprintCallable, Category = Setup)
 	void Initialize(UTankBarrel* BarrelToSet, UTankTurret* TurretToSet);
@@ -55,6 +59,7 @@ private:
 		TSubclassOf<AProjectile> ProjectileBP = nullptr;
 
 	double LastFireTime = 0;
+	int RoundsLeft = 3;
 	FVector AimDirection;
 	UTankTurret* Turret = nullptr;
 	UTankBarrel* Barrel = nullptr;
