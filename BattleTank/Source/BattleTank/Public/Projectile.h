@@ -4,10 +4,11 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "Runtime/Engine/Classes/Particles/ParticleSystemComponent.h "
 #include "Projectile.generated.h"
 
 class UProjectileMovementComponent;
+class UParticleSystemComponent;
+class URadialForceComponent;
 
 UCLASS()
 class BATTLETANK_API AProjectile : public AActor
@@ -33,6 +34,9 @@ private:
 
 	UPROPERTY(VisibleAnywhere, Category = Components)
 	UParticleSystemComponent* ImpactBlast = nullptr;
+
+	UPROPERTY(VisibleAnywhere, Category = Components)
+	URadialForceComponent* ExplosionForce = nullptr;
 
 	/*
 	This function will get called every frame that the TankTrack is hit
