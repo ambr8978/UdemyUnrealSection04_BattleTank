@@ -5,6 +5,29 @@
 #include "Tank.h"
 #include "Engine.h"
 
+void ATankPlayerController::SetPawn(APawn* InPawn)
+{
+	Super::SetPawn(InPawn);
+	ATank* PossessedTank = Cast<ATank>(InPawn);
+
+	if (!ensure(PossessedTank))
+	{
+		return;
+	}
+
+	PossessedTank->OnDeath.AddUniqueDynamic(this, &ATankPlayerController::OnPossessedTankDeath);
+}
+
+void ATankPlayerController::OnPossessedTankDeath()
+{
+	if (!GetPawn())
+	{
+		return;
+	}
+
+	StartSpectatingOnly();
+}
+
 void ATankPlayerController::BeginPlay()
 {
 	Super::BeginPlay();
